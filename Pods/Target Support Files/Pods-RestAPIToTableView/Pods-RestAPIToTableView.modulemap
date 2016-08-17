@@ -1,0 +1,6 @@
+framework module Pods_RestAPIToTableView {
+  umbrella header "Pods-RestAPIToTableView-umbrella.h"
+
+  export *
+  module * { export * }
+}

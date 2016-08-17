@@ -7,15 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E4211B01D6456F700A11953 /* AlamofireRequest+JSONSerializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4211AF1D6456F700A11953 /* AlamofireRequest+JSONSerializable.swift */; };
 		5EC9873F1D63FB14008915DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC9873E1D63FB14008915DA /* AppDelegate.swift */; };
 		5EC987411D63FB14008915DA /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC987401D63FB14008915DA /* MasterViewController.swift */; };
 		5EC987431D63FB14008915DA /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC987421D63FB14008915DA /* DetailViewController.swift */; };
 		5EC987461D63FB14008915DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EC987441D63FB14008915DA /* Main.storyboard */; };
 		5EC987481D63FB14008915DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EC987471D63FB14008915DA /* Assets.xcassets */; };
 		5EC9874B1D63FB14008915DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EC987491D63FB14008915DA /* LaunchScreen.storyboard */; };
+		5EC987531D63FE84008915DA /* GitHubAPIManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC987521D63FE84008915DA /* GitHubAPIManger.swift */; };
+		5EC987551D63FFAE008915DA /* GistRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC987541D63FFAE008915DA /* GistRouter.swift */; };
+		5EC987571D6404A9008915DA /* Gist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC987561D6404A9008915DA /* Gist.swift */; };
+		B47F89615D9C9B8034D7DE37 /* Pods_RestAPIToTableView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE90089373C46D7F5949EB5A /* Pods_RestAPIToTableView.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3B4553945B538B194EA44AC8 /* Pods-RestAPIToTableView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RestAPIToTableView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RestAPIToTableView/Pods-RestAPIToTableView.debug.xcconfig"; sourceTree = "<group>"; };
+		5E4211AF1D6456F700A11953 /* AlamofireRequest+JSONSerializable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AlamofireRequest+JSONSerializable.swift"; sourceTree = "<group>"; };
 		5EC9873B1D63FB14008915DA /* RestAPIToTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RestAPIToTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EC9873E1D63FB14008915DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5EC987401D63FB14008915DA /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +31,11 @@
 		5EC987471D63FB14008915DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5EC9874A1D63FB14008915DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5EC9874C1D63FB14008915DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5EC987521D63FE84008915DA /* GitHubAPIManger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitHubAPIManger.swift; sourceTree = "<group>"; };
+		5EC987541D63FFAE008915DA /* GistRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GistRouter.swift; sourceTree = "<group>"; };
+		5EC987561D6404A9008915DA /* Gist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gist.swift; sourceTree = "<group>"; };
+		CA50C7C26AE3EE779EBFEC9D /* Pods-RestAPIToTableView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RestAPIToTableView.release.xcconfig"; path = "Pods/Target Support Files/Pods-RestAPIToTableView/Pods-RestAPIToTableView.release.xcconfig"; sourceTree = "<group>"; };
+		CE90089373C46D7F5949EB5A /* Pods_RestAPIToTableView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RestAPIToTableView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +43,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B47F89615D9C9B8034D7DE37 /* Pods_RestAPIToTableView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		367330A55CAEF6DEA20D59DE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3B4553945B538B194EA44AC8 /* Pods-RestAPIToTableView.debug.xcconfig */,
+				CA50C7C26AE3EE779EBFEC9D /* Pods-RestAPIToTableView.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		5EC987321D63FB14008915DA = {
 			isa = PBXGroup;
 			children = (
 				5EC9873D1D63FB14008915DA /* RestAPIToTableView */,
 				5EC9873C1D63FB14008915DA /* Products */,
+				367330A55CAEF6DEA20D59DE /* Pods */,
+				9174770A14508084FC70409A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,8 +87,20 @@
 				5EC987471D63FB14008915DA /* Assets.xcassets */,
 				5EC987491D63FB14008915DA /* LaunchScreen.storyboard */,
 				5EC9874C1D63FB14008915DA /* Info.plist */,
+				5EC987521D63FE84008915DA /* GitHubAPIManger.swift */,
+				5EC987541D63FFAE008915DA /* GistRouter.swift */,
+				5EC987561D6404A9008915DA /* Gist.swift */,
+				5E4211AF1D6456F700A11953 /* AlamofireRequest+JSONSerializable.swift */,
 			);
 			path = RestAPIToTableView;
+			sourceTree = "<group>";
+		};
+		9174770A14508084FC70409A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE90089373C46D7F5949EB5A /* Pods_RestAPIToTableView.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +110,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5EC9874F1D63FB14008915DA /* Build configuration list for PBXNativeTarget "RestAPIToTableView" */;
 			buildPhases = (
+				076290429D54C432A9649DA0 /* [CP] Check Pods Manifest.lock */,
 				5EC987371D63FB14008915DA /* Sources */,
 				5EC987381D63FB14008915DA /* Frameworks */,
 				5EC987391D63FB14008915DA /* Resources */,
+				886C457BBAB92DC6E19E2DFA /* [CP] Embed Pods Frameworks */,
+				813D48C95750B0DDA8953388 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -134,6 +173,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		076290429D54C432A9649DA0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		813D48C95750B0DDA8953388 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RestAPIToTableView/Pods-RestAPIToTableView-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		886C457BBAB92DC6E19E2DFA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RestAPIToTableView/Pods-RestAPIToTableView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5EC987371D63FB14008915DA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -141,7 +228,11 @@
 			files = (
 				5EC987431D63FB14008915DA /* DetailViewController.swift in Sources */,
 				5EC987411D63FB14008915DA /* MasterViewController.swift in Sources */,
+				5E4211B01D6456F700A11953 /* AlamofireRequest+JSONSerializable.swift in Sources */,
+				5EC987571D6404A9008915DA /* Gist.swift in Sources */,
 				5EC9873F1D63FB14008915DA /* AppDelegate.swift in Sources */,
+				5EC987551D63FFAE008915DA /* GistRouter.swift in Sources */,
+				5EC987531D63FE84008915DA /* GitHubAPIManger.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,23 +343,31 @@
 		};
 		5EC987501D63FB14008915DA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B4553945B538B194EA44AC8 /* Pods-RestAPIToTableView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = RestAPIToTableView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hf520.net.RestAPIToTableView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
 		5EC987511D63FB14008915DA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA50C7C26AE3EE779EBFEC9D /* Pods-RestAPIToTableView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = RestAPIToTableView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hf520.net.RestAPIToTableView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -291,6 +390,7 @@
 				5EC987511D63FB14008915DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
